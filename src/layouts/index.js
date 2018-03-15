@@ -13,6 +13,10 @@ import Map from '../components/Index/Map/Map'
 import Contacts from '../components/Index/Contacts/Contacts'
 import Footer from '../components/Index/Footer/Footer'
 
+import Grid from 'react-bootstrap/lib/Grid'
+import Row from 'react-bootstrap/lib/Row'
+import Col from 'react-bootstrap/lib/Col'
+
 import './css/bootstrap-grid.min.css'
 import './css/bootstrap-reboot.min.css'
 import './css/bootstrap.min.css'
@@ -27,16 +31,28 @@ const TemplateWrapper = () => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Navigation />
-    <Hero />
-    <Welcome />
-    <Rooms />
-    <ThingsToDo />
-    <About />
-    <Social />
-    <Map />
-    <Contacts />
-    <Footer />
+    <Grid>
+      <Row><Navigation /></Row>
+      <Row><Hero /></Row>
+      <Row><Welcome /></Row>
+      <Row><Rooms /></Row>
+      <Row><ThingsToDo /></Row>
+      <Row><About /></Row>
+      <Row><Social /></Row>
+      <Row><Map /></Row>
+      <Row><Contacts /></Row>
+      <Row><Footer /></Row>
+    </Grid>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   </div>
 )
 
