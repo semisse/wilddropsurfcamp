@@ -22,6 +22,14 @@ class Navigation extends Component {
         top: 20,
         right: 20
       },
+      bmMenu: {
+        width: '100%'
+      },
+      bmItemList: {
+        width: '100%',
+        left: 'auto',
+        marginTop: '72pt'
+      },
       
     }
 
