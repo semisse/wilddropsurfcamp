@@ -1,59 +1,71 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
 import Grid from 'react-bootstrap/lib/Grid'
 import Row from 'react-bootstrap/lib/Row'
 import Col from 'react-bootstrap/lib/Col'
+import { elastic as Menu } from 'react-burger-menu'
 
 import './Navigation.sass'
 
 import Logo from '../../../img/logo.svg'
+import Burger from '../../../img/burger.svg'
+import Cross from '../../../img/cross.svg'
 
-const Navigation = () => (
-  <div>
-    <Grid>
-      <Row className="show-grid">
-        <div className="col-9">
-          <div className="logo">
-            <Link to="/">
-              <img src={Logo} alt="Logo Wild Drop" />
-            </Link>
-          </div>
-        </div>
-        <div className="col-1">
-          <div id="burger">
-            <span />
-            <span />
-            <span />
-          </div>
-        </div>
-      </Row>
-    </Grid>
+class Navigation extends Component {
+  render() {
 
-    <div id="nav" className="overlay">
-      <div id="close">
-        <a href="javascript:void(0)" className="closebtn" />
+    var styles = {
+      bmCrossButton: {
+        width: 45,
+        height: 45,
+        top: 20,
+        right: 20
+      },
+      
+    }
+
+    return (
+      <div>
+        <Grid>
+          <Row className="show-grid">
+            <div className="logo">
+              <Link to="/">
+                <img src={Logo} alt="Logo Wild Drop" />
+              </Link>
+            </div>
+
+            <Menu
+              right
+              styles={ styles }
+              width={'100%'}
+              customBurgerIcon={<img src={Burger} />}
+              customCrossIcon={<img src={Cross} />}
+              pageWrapId={'page-wrap'}
+              outerContainerId={'outer-container'}
+              noOverlay
+            >
+              <Link id="home" className="menu-item" to="/">
+                Home
+              </Link>
+              <Link id="rooms" className="menu-item" to="/rooms">
+                Rooms
+              </Link>
+              <Link id="things-to-do" className="menu-item" to="/things-to-do">
+                Things to do
+              </Link>
+              <Link id="about" className="menu-item" to="/about">
+                About
+              </Link>
+              <Link id="contacts" className="menu-item" to="/contacts">
+                Contacts
+              </Link>
+            </Menu>
+          </Row>
+        </Grid>
       </div>
-      <div className="grid-x">
-        <div className="small-12 medium-12 large-9 cell navigation">
-          <div className="overlay-content">
-            <a data-scroll href="#quemsomos">
-              Quem Somos
-            </a>
-            <a data-scroll href="#areasdenegocio">
-              Áreas de Negócio
-            </a>
-            <a data-scroll href="#clientes">
-              Clientes
-            </a>
-            <a data-scroll href="#contactos">
-              Contactos
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-)
+    )
+  }
+}
 
 export default Navigation

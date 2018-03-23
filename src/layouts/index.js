@@ -23,7 +23,7 @@ import './css/bootstrap.min.css'
 import './index.sass'
 
 const TemplateWrapper = () => (
-  <div>
+  <div id="outer-container">
     <Helmet
       title="Wild Drop"
       meta={[
@@ -33,15 +33,17 @@ const TemplateWrapper = () => (
     />
     <Grid>
       <Row><Navigation /></Row>
-      <Row><Hero /></Row>
-      <Row><Welcome /></Row>
-      <Row><Rooms /></Row>
-      <Row><ThingsToDo /></Row>
-      <Row><About /></Row>
-      <Row><Social /></Row>
-      <Row><Map /></Row>
-      <Row><Contacts /></Row>
-      <Row><Footer /></Row>
+      <div id="page-wrap">
+        <Row><Hero /></Row>
+        <Row><Welcome /></Row>
+        <Row><Rooms /></Row>
+        <Row><ThingsToDo /></Row>
+        <Row><About /></Row>
+        <Row><Social /></Row>
+        <Row><Map /></Row>
+        <Row><Contacts /></Row>
+        <Row><Footer /></Row>
+      </div>
     </Grid>
     
     

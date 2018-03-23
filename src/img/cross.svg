@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>cross</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Menu-Mobile" transform="translate(-295.000000, -23.000000)" stroke="#131313">
+            <g id="cross" transform="translate(295.000000, 23.000000)">
+                <path d="M0.5,0.5 L44.1405774,44.1405774" id="Line"></path>
+                <path d="M0.5,0.5 L44.1405774,44.1405774" id="Line" transform="translate(22.500000, 22.500000) scale(-1, 1) translate(-22.500000, -22.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
