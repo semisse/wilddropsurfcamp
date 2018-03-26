@@ -1,0 +1,51 @@
+.RoomsAndThings
+    background: black
+
+    a
+        padding: 0
+        &:hover
+            text-decoration: none
+
+    .Rooms, .Things
+        width: 100%
+        height: 300px
+        position: relative
+        background: black
+        display: flex
+        align-items: center
+        opacity: 1
+
+        
+
+        @media (min-width: 1200px)
+            height: 500px
+
+    .Rooms, .Things
+        &::before
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            content: ""
+            opacity: .55
+            background: url("../../../img/home/our-rooms.jpg")
+            transition: all .2s
+
+        &:hover
+            &::before
+                opacity: .7
+
+    .Things
+        &::before
+            background: url("../../../img/home/things-to-do.jpg")
+
+    h2
+        font-family: "flood-std"
+        font-size: 40pt
+        color: #EC645A
+        text-align: center
+        width: 100%
+        opacity: 1
+
+        

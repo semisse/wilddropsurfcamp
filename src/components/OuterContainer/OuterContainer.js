@@ -5,8 +5,7 @@ import Helmet from 'react-helmet'
 import Navigation from '../Index/Navigation/Navigation'
 import Hero from '../Index/Hero/Hero'
 import Welcome from '../Index/Welcome/Welcome'
-import Rooms from '../Index/Rooms/Rooms'
-import ThingsToDo from '../Index/ThingsToDo/ThingsToDo'
+import RoomsAndThings from '../Index/RoomsAndThings/RoomsAndThings'
 import About from '../Index/About/About'
 import Social from '../Index/Social/Social'
 import Map from '../Index/Map/Map'
@@ -47,11 +46,9 @@ class OuterContainer extends Component {
         <div className="container-fluid" id="page-wrap">
           <Hero className="container-fluid" data={this.props.data} />
 
-          <Welcome />
+          <Welcome className="container-fluid" />
 
-          <Rooms />
-
-          <ThingsToDo />
+          <RoomsAndThings className="container" />
 
           <About />
 
