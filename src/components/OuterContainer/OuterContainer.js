@@ -24,60 +24,48 @@ import './css/bootstrap-reboot.min.css'
 import './css/bootstrap.min.css'
 import './index.sass'
 
-
 class OuterContainer extends Component {
-  
-    componentDidMount = () => {
-      WebFont.load({
-        typekit: {
-          id: 'ojv8ltq'
-        }
-      });
-    }
-  
-    render() {
-      return (
-        <div id="outer-container">
-          <Helmet
-            title="Wild Drop"
-            meta={[
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
-            ]}
-          />
-          <Navigation />
-          <div className="container-fluid" id="page-wrap">
-            <div >
-                <Hero className="container-fluid" data={this.props.data} />
-              <Row>
-                <Welcome />
-              </Row>
-              <Row>
-                <Rooms />
-              </Row>
-              <Row>
-                <ThingsToDo />
-              </Row>
-              <Row>
-                <About />
-              </Row>
-              <Row>
-                <Social />
-              </Row>
-              <Row>
-                <Map />
-              </Row>
-              <Row>
-                <Contacts />
-              </Row>
-              <Row>
-                <Footer />
-              </Row>
-            </div>
-          </div>
-        </div>
-      )
-    }
+  componentDidMount = () => {
+    WebFont.load({
+      typekit: {
+        id: 'ojv8ltq',
+      },
+    })
   }
+
+  render() {
+    return (
+      <div id="outer-container">
+        <Helmet
+          title="Wild Drop"
+          meta={[
+            { name: 'description', content: 'Sample' },
+            { name: 'keywords', content: 'sample, something' },
+          ]}
+        />
+        <Navigation />
+        <div className="container-fluid" id="page-wrap">
+          <Hero className="container-fluid" data={this.props.data} />
+
+          <Welcome />
+
+          <Rooms />
+
+          <ThingsToDo />
+
+          <About />
+
+          <Social />
+
+          <Map />
+
+          <Contacts />
+
+          <Footer />
+        </div>
+      </div>
+    )
+  }
+}
 
 export default OuterContainer
