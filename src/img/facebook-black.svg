@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook-black</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu-Mobile" transform="translate(-120.000000, -451.000000)" fill-rule="nonzero" fill="#131313">
+            <g id="social" transform="translate(120.000000, 451.000000)">
+                <path d="M22.2222222,0 L2.77777778,0 C1.25,0 0,1.25 0,2.77777778 L0,22.2222222 C0,23.7513889 1.25,25 2.77777778,25 L12.5,25 L12.5,15.2777778 L9.72222222,15.2777778 L9.72222222,11.8402778 L12.5,11.8402778 L12.5,8.99305556 C12.5,5.9875 14.1833333,3.87638889 17.7305556,3.87638889 L20.2347222,3.87916667 L20.2347222,7.49722222 L18.5722222,7.49722222 C17.1916667,7.49722222 16.6666667,8.53333333 16.6666667,9.49444444 L16.6666667,11.8416667 L20.2333333,11.8416667 L19.4444444,15.2777778 L16.6666667,15.2777778 L16.6666667,25 L22.2222222,25 C23.75,25 25,23.7513889 25,22.2222222 L25,2.77777778 C25,1.25 23.75,0 22.2222222,0 Z" id="facebook-black"></path>
+            </g>
+        </g>
+    </g>
+</svg>
