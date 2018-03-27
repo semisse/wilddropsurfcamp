@@ -22,5 +22,15 @@ export const query = graphql`
        ...GatsbyImageSharpSizes
      }
    }
+   ourRooms: imageSharp(id: {regex: "/home/our-rooms.jpg/"}) {
+     sizes(maxWidth: 1240) {
+       ...GatsbyImageSharpSizes
+     }
+   }
+   ThingsToDo: imageSharp(id: {regex: "/home/things-to-do.jpg/"}) {
+     sizes(maxWidth: 1240) {
+       ...GatsbyImageSharpSizes
+     }
+   }
  }
 `

@@ -44,11 +44,11 @@ class OuterContainer extends Component {
         />
         <Navigation />
         <div className="container-fluid" id="page-wrap">
-          <Hero className="container-fluid" data={this.props.data} />
+          <Hero className="container-fluid" />
 
           <Welcome className="container-fluid" />
 
-          <RoomsAndThings className="container" />
+          <RoomsAndThings className="container" data={this.props.data} />
 
           <About />
 

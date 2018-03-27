@@ -1,21 +1,24 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Img from 'gatsby-image'
 
 import './RoomsAndThings.sass'
 
-const RoomsAndThings = () => (
+const RoomsAndThings = ({ data }) => (
   <div className="RoomsAndThings container">
     <div className="row">
-      <Link to="/rooms" className="col-sm-12 col-md-6">
-        <div className="Rooms">
-          <h2>Our rooms</h2>
-        </div>
-      </Link>
-      <Link to="/things-to-do" className="col-sm-12 col-md-6">
-        <div className="Things">
-          <h2>Things to do</h2>
-        </div>
-      </Link>
+      <div className="col-sm-12 col-md-6">
+        <Link to="/rooms" >
+          <Img sizes={data.ourRooms.sizes} />
+          <h2>Our <br/>rooms</h2>
+        </Link>
+      </div>
+      <div className="col-sm-12 col-md-6">
+        <Link to="/rooms" >
+          <Img sizes={data.ThingsToDo.sizes} />
+          <h2>Things <br/>to do</h2>
+        </Link>
+      </div>
     </div>
   </div>
 )
