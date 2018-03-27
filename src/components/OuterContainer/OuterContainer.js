@@ -50,7 +50,7 @@ class OuterContainer extends Component {
 
           <RoomsAndThings className="container" data={this.props.data} />
 
-          <About />
+          <About className="container" data={this.props.data} />
 
           <Social />
 
