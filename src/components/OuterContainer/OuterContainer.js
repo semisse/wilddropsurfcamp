@@ -54,7 +54,7 @@ class OuterContainer extends Component {
 
           <SocialAndMap className="container" />
 
-          <Contacts />
+          <Contacts className="container-fluid" />
 
           <Footer />
         </div>
