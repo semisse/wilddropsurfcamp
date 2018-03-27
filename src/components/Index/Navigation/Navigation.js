@@ -68,21 +68,21 @@ class Navigation extends Component {
             Contacts
           </Link>
           <div className="social">
-            <Link to="http://facebook.com">
+            <a href="http://facebook.com" target="_blank">
               <span>
                 <img src={FacebookBlack} alt="Facebook" />
               </span>
-            </Link>
-            <Link to="http://tripadvisor.com">
+            </a>
+            <a href="http://tripadvisor.com" target="_blank">
               <span>
                 <img src={TripadvisorBlack} alt="TripAdvisor" />
               </span>
-            </Link>
-            <Link to="http://instagram.com">
+            </a>
+            <a href="http://instagram.com" target="_blank">
               <span>
                 <img src={InstagramBlack} alt="Instagram" />
               </span>
-            </Link>
+            </a>
           </div>
           <div className="callme">
             <h3>Call me now!</h3>

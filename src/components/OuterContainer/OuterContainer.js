@@ -56,7 +56,7 @@ class OuterContainer extends Component {
 
           <Contacts className="container-fluid" />
 
-          <Footer />
+          <Footer className="container-fluid" />
         </div>
       </div>
     )

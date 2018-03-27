@@ -7,21 +7,21 @@ const Social = () => (
   <div className="Social container">
     <div className="row">
       <div className="col-sm-12 facebook">
-        <Link to="http://facebook.com" target="_blank">
+        <a href="http://facebook.com" target="_blank">
           we are on facebook
-        </Link>
+        </a>
       </div>
     </div>
     <div className="row">
       <div className="col-sm-6 tripadvisor">
-        <Link to="http://tripadvisor.com" target="_blank">
+        <a href="http://tripadvisor.com" target="_blank">
           and on<br />tripadvisor
-        </Link>
+        </a>
       </div>
       <div className="col-sm-6 instagram">
-        <Link to="http://instagram.com" target="_blank">
+        <a href="http://instagram.com" target="_blank">
           and on<br />instagram
-        </Link>
+        </a>
       </div>
     </div>
   </div>
