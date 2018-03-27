@@ -7,7 +7,7 @@ import Hero from '../Index/Hero/Hero'
 import Welcome from '../Index/Welcome/Welcome'
 import RoomsAndThings from '../Index/RoomsAndThings/RoomsAndThings'
 import About from '../Index/About/About'
-import Social from '../Index/Social/Social'
+import SocialAndMap from '../Index/SocialAndMap/SocialAndMap'
 import Map from '../Index/Map/Map'
 import Contacts from '../Index/Contacts/Contacts'
 import Footer from '../Index/Footer/Footer'
@@ -52,9 +52,7 @@ class OuterContainer extends Component {
 
           <About className="container" data={this.props.data} />
 
-          <Social />
-
-          <Map />
+          <SocialAndMap className="container" />
 
           <Contacts />
 
