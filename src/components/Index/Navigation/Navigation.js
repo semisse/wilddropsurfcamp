@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Link, { withPrefix } from 'gatsby-link'
+import Link from 'gatsby-link'
 
 
 import Grid from 'react-bootstrap/lib/Grid'
@@ -35,6 +35,13 @@ class Navigation extends Component {
     this.setState({menuOpen: false})
   }
 
+  componentDidMount = () => {
+    
+    this.url = location.pathname
+    
+
+  }
+
   render() {
     var styles = {
       bmCrossButton: {
@@ -57,7 +64,7 @@ class Navigation extends Component {
       <div>
         <div className="logo">
           <Link to="/">
-            <img src={location.pathname === '/' || location.pathname === '/contacts' || location.pathname === '/about' ? Logo : LogoWhite} alt="Logo Wild Drop" />
+            <img src={this.url === '/' || this.url === '/contacts' || this.url === '/about' ? Logo : LogoWhite} alt="Logo Wild Drop" />
           </Link>
         </div>
 
