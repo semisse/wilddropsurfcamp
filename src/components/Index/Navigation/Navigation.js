@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
-
 import Grid from 'react-bootstrap/lib/Grid'
 import Row from 'react-bootstrap/lib/Row'
 import Col from 'react-bootstrap/lib/Col'
@@ -19,27 +18,23 @@ import TripadvisorBlack from '../../../img/tripadvisor-black.svg'
 import InstagramBlack from '../../../img/instagram-black.svg'
 
 class Navigation extends Component {
-
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
-      menuOpen: false
+      menuOpen: false,
     }
   }
 
-  handleStateChange (state) {
-    this.setState({menuOpen: state.isOpen})  
+  handleStateChange(state) {
+    this.setState({ menuOpen: state.isOpen })
   }
 
-  closeMenu () {
-    this.setState({menuOpen: false})
+  closeMenu() {
+    this.setState({ menuOpen: false })
   }
 
-  componentDidMount = () => {
-    
+  componentWillUpdate = () => {
     this.url = location.pathname
-    
-
   }
 
   render() {
@@ -64,7 +59,10 @@ class Navigation extends Component {
       <div>
         <div className="logo">
           <Link to="/">
-            <img src={this.url === '/' || this.url === '/contacts' || this.url === '/about' ? Logo : LogoWhite} alt="Logo Wild Drop" />
+            <img
+              src={this.url === '/' || this.url === '/about' || this.url === '/contacts' ? Logo : LogoWhite}
+              alt="Logo Wild Drop"
+            />
           </Link>
         </div>
 
@@ -78,21 +76,52 @@ class Navigation extends Component {
           outerContainerId={'outer-container'}
           noOverlay
           isOpen={this.state.menuOpen}
-          onStateChange={(state) => this.handleStateChange(state)}
+          onStateChange={state => this.handleStateChange(state)}
         >
-          <Link exact id="home" className="menu-item" to="/" onClick={() => this.closeMenu()} activeStyle={{ color: 'white' }}>
+          <Link
+            exact
+            id="home"
+            className="menu-item"
+            to="/"
+            onClick={() => this.closeMenu()}
+            activeStyle={{ color: 'white' }}
+          >
             Home
           </Link>
-          <Link id="rooms" className="menu-item" to="/rooms" onClick={() => this.closeMenu()} activeStyle={{ color: 'white' }}>
+          <Link
+            id="rooms"
+            className="menu-item"
+            to="/rooms"
+            onClick={() => this.closeMenu()}
+            activeStyle={{ color: 'white' }}
+          >
             Rooms
           </Link>
-          <Link id="things-to-do" className="menu-item" to="/things-to-do" onClick={() => this.closeMenu()} activeStyle={{ color: 'white' }}>
+          <Link
+            id="things-to-do"
+            className="menu-item"
+            to="/things-to-do"
+            onClick={() => this.closeMenu()}
+            activeStyle={{ color: 'white' }}
+          >
             Things to do
           </Link>
-          <Link id="about" className="menu-item" to="/about" onClick={() => this.closeMenu()} activeStyle={{ color: 'white' }}>
+          <Link
+            id="about"
+            className="menu-item"
+            to="/about"
+            onClick={() => this.closeMenu()}
+            activeStyle={{ color: 'white' }}
+          >
             About
           </Link>
-          <Link id="contacts" className="menu-item" to="/contacts" onClick={() => this.closeMenu()} activeStyle={{ color: 'white' }}>
+          <Link
+            id="contacts"
+            className="menu-item"
+            to="/contacts"
+            onClick={() => this.closeMenu()}
+            activeStyle={{ color: 'white' }}
+          >
             Contacts
           </Link>
           <div className="social">
