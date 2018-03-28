@@ -1,41 +1,48 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import WebFont from 'webfontloader'
 
-import OuterContainer from '../components/OuterContainer/OuterContainer';
+import Navigation from '../components/Index/Navigation/Navigation'
+import Footer from '../components/Index/Footer/Footer'
 
-const TemplateWrapper = ({ children, data }) => (
-  <div>
-    <OuterContainer data={data} />
-  </div>
-)
+import './css/bootstrap-grid.css'
+import './css/bootstrap-reboot.min.css'
+import './css/bootstrap.min.css'
+import './index.sass'
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+import OuterContainer from '../components/OuterContainer/OuterContainer'
+
+class TemplateWrapper extends Component {
+
+  componentDidMount = () => {
+    WebFont.load({
+      typekit: {
+        id: 'ojv8ltq',
+      },
+    })
+  }
+
+  render() {
+    return (
+      <div id="outer-container">
+        <Helmet
+          title="Wild Drop"
+          meta={[
+            { name: 'description', content: 'Sample' },
+            { name: 'keywords', content: 'sample, something' },
+          ]}
+        />
+        <Navigation />
+        { this.props.children({...this.props}) }
+        <Footer className="container-fluid" />
+      </div>
+    )
+  }
 }
 
 export default TemplateWrapper
 
-export const query = graphql`
- query SiteContent {
-   hero: imageSharp(id: {regex: "/hero/hero.jpg/"}) {
-     sizes(maxWidth: 1240) {
-       ...GatsbyImageSharpSizes
-     }
-   }
-   ourRooms: imageSharp(id: {regex: "/home/our-rooms.jpg/"}) {
-     sizes(maxWidth: 1240) {
-       ...GatsbyImageSharpSizes
-     }
-   }
-   ThingsToDo: imageSharp(id: {regex: "/home/things-to-do.jpg/"}) {
-     sizes(maxWidth: 1240) {
-       ...GatsbyImageSharpSizes
-     }
-   }
-   AboutMe: imageSharp(id: {regex: "/home/aboutme.jpg/"}) {
-    sizes(maxWidth: 1240) {
-      ...GatsbyImageSharpSizes
-    }
-  }
- }
-`
+TemplateWrapper.propTypes = {
+  children: PropTypes.func,
+}

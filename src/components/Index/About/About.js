@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 
 import './About.sass'
 
-const About = ({ data }) => (
-  <div className="About container">
+
+
+export default class About extends Component {
+  render() {
+    return (
+      <div className="About container">
     <div className="row">
       <div className="col-sm-12 col-md-6 image">
-          <Img sizes={data.AboutMe.sizes} />
+          <Img sizes={this.props.data.AboutMe.sizes} />
       </div>
       <div className="col-sm-12 col-md-6 text">
         <h2>
@@ -20,6 +24,6 @@ const About = ({ data }) => (
       </div>
     </div>
   </div>
-)
-
-export default About
+    )
+  }
+}

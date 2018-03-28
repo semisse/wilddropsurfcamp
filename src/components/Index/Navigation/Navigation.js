@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import Link from 'gatsby-link'
+import ReactDOM from 'react-dom'
+import Link, { withPrefix } from 'gatsby-link'
+
 
 import Grid from 'react-bootstrap/lib/Grid'
 import Row from 'react-bootstrap/lib/Row'
@@ -9,13 +11,31 @@ import { elastic as Menu } from 'react-burger-menu'
 import './Navigation.sass'
 
 import Logo from '../../../img/logo.svg'
+import LogoWhite from '../../../img/logo-white.svg'
 import Burger from '../../../img/burger.svg'
+import BurgerWhite from '../../../img/burger-white.svg'
 import Cross from '../../../img/cross.svg'
 import FacebookBlack from '../../../img/facebook-black.svg'
 import TripadvisorBlack from '../../../img/tripadvisor-black.svg'
 import InstagramBlack from '../../../img/instagram-black.svg'
 
 class Navigation extends Component {
+
+  constructor (props) {
+    super(props)
+    this.state = {
+      menuOpen: false
+    }
+  }
+
+  handleStateChange (state) {
+    this.setState({menuOpen: state.isOpen})  
+  }
+
+  closeMenu () {
+    this.setState({menuOpen: false})
+  }
+
   render() {
     var styles = {
       bmCrossButton: {
@@ -38,7 +58,7 @@ class Navigation extends Component {
       <div>
         <div className="logo">
           <Link to="/">
-            <img src={Logo} alt="Logo Wild Drop" />
+            <img src={location.pathname === '/' || location.pathname === '/contacts' || location.pathname === '/about' ? Logo : LogoWhite} alt="Logo Wild Drop" />
           </Link>
         </div>
 
@@ -51,20 +71,22 @@ class Navigation extends Component {
           pageWrapId={'page-wrap'}
           outerContainerId={'outer-container'}
           noOverlay
+          isOpen={this.state.menuOpen}
+          onStateChange={(state) => this.handleStateChange(state)}
         >
-          <Link id="home" className="menu-item" to="/">
+          <Link exact id="home" className="menu-item" to="/" onClick={() => this.closeMenu()} activeStyle={{ color: 'white' }}>
             Home
           </Link>
-          <Link id="rooms" className="menu-item" to="/page-2">
+          <Link id="rooms" className="menu-item" to="/rooms" onClick={() => this.closeMenu()} activeStyle={{ color: 'white' }}>
             Rooms
           </Link>
-          <Link id="things-to-do" className="menu-item" to="/things-to-do">
+          <Link id="things-to-do" className="menu-item" to="/things-to-do" onClick={() => this.closeMenu()} activeStyle={{ color: 'white' }}>
             Things to do
           </Link>
-          <Link id="about" className="menu-item" to="/about">
+          <Link id="about" className="menu-item" to="/about" onClick={() => this.closeMenu()} activeStyle={{ color: 'white' }}>
             About
           </Link>
-          <Link id="contacts" className="menu-item" to="/contacts">
+          <Link id="contacts" className="menu-item" to="/contacts" onClick={() => this.closeMenu()} activeStyle={{ color: 'white' }}>
             Contacts
           </Link>
           <div className="social">

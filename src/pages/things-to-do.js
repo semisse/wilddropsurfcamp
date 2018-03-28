@@ -1,19 +1,19 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import OuterContainer from '../components/OuterContainer/OuterContainer'
+import Rooms from '../components/Rooms/Rooms'
 
 const IndexPage = ({ data }) => (
-  
-  <div>
-    <OuterContainer data={data} />
+  <div id="things-to-do">
+    <h1>Things To Do</h1>
+    <Rooms data={data} />
   </div>
 )
 
 export default IndexPage
 
 export const query = graphql`
-  query SiteContent {
+  query ThingsQuery {
     ourRooms: imageSharp(id: { regex: "/home/our-rooms.jpg/" }) {
       sizes(maxWidth: 1240) {
         ...GatsbyImageSharpSizes
