@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Link, { withPrefix } from 'gatsby-link'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import WebFont from 'webfontloader'
@@ -27,9 +28,27 @@ class TemplateWrapper extends Component {
       },
     })
 
+    // let RightNavigation
+    //   if (location.pathname === '/') {
+
+    //     // RightNavigation = <Navigation />
+
+    //     // return RightNavigation
+    //     return 'Hello'
+    //   } else {
+    //     RightNavigation = <NavigationWhite />
+
+    //     return RightNavigation
+    //   }
+
   }
 
+  
+
   render() {
+
+    const isHomepage = location.pathname === withPrefix("/");
+
     return (
       <div id="outer-container">
         <Helmet
@@ -39,7 +58,8 @@ class TemplateWrapper extends Component {
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
-        { window.location === '/' ? <Navigation /> :  <NavigationWhite /> }
+        
+        { isHomepage ? <Navigation /> :  <NavigationWhite /> }
         { this.props.children({...this.props}) }
         <Footer className="container-fluid" />
       </div>
