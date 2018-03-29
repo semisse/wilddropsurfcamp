@@ -26,7 +26,6 @@ class TemplateWrapper extends Component {
         async: true
       },
     })
-    WebFont.async = true;
 
   }
 
@@ -40,7 +39,7 @@ class TemplateWrapper extends Component {
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
-        { location.pathname === '/' ? <Navigation /> :  <NavigationWhite /> }
+        { window.location === '/' ? <Navigation /> :  <NavigationWhite /> }
         { this.props.children({...this.props}) }
         <Footer className="container-fluid" />
       </div>
