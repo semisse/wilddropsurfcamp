@@ -28,6 +28,8 @@ class TemplateWrapper extends Component {
       },
     })
 
+    
+
     // let RightNavigation
     //   if (location.pathname === '/') {
 
@@ -47,7 +49,23 @@ class TemplateWrapper extends Component {
 
   render() {
 
-    const isHomepage = location.pathname === withPrefix("/");
+    function Nav() {
+
+      if(typeof window !== 'undefined' && window.location.pathname === '/') {
+        return <Navigation />
+      } else {
+        return <NavigationWhite />
+      }
+    }
+    
+    // try {
+    //   // const isHomepage = location.pathname === withPrefix("/");
+    //   const isHomepage = location.pathname
+    //   console.log(isHomepage)
+  
+    // } catch (e) {
+    //   console.log(e)
+    // }
 
     return (
       <div id="outer-container">
@@ -58,8 +76,7 @@ class TemplateWrapper extends Component {
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
-        
-        { isHomepage ? <Navigation /> :  <NavigationWhite /> }
+        <Nav />
         { this.props.children({...this.props}) }
         <Footer className="container-fluid" />
       </div>
