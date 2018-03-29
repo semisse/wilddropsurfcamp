@@ -4,7 +4,11 @@ import Helmet from 'react-helmet'
 import WebFont from 'webfontloader'
 
 import Navigation from '../components/Index/Navigation/Navigation'
+import NavigationWhite from '../components/Index/NavigationWhite/NavigationWhite'
 import Footer from '../components/Index/Footer/Footer'
+
+import nprogress from 'nprogress'
+import 'nprogress/nprogress.css'
 
 import './css/bootstrap-grid.css'
 import './css/bootstrap-reboot.min.css'
@@ -19,8 +23,11 @@ class TemplateWrapper extends Component {
     WebFont.load({
       typekit: {
         id: 'ojv8ltq',
+        async: true
       },
     })
+    WebFont.async = true;
+
   }
 
   render() {
@@ -33,7 +40,7 @@ class TemplateWrapper extends Component {
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
-        <Navigation />
+        { location.pathname === '/' ? <Navigation /> :  <NavigationWhite /> }
         { this.props.children({...this.props}) }
         <Footer className="container-fluid" />
       </div>

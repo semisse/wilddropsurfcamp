@@ -6,10 +6,10 @@ import Row from 'react-bootstrap/lib/Row'
 import Col from 'react-bootstrap/lib/Col'
 import { elastic as Menu } from 'react-burger-menu'
 
-import './Navigation.sass'
+import './NavigationWhite.sass'
 
-import Logo from '../../../img/logo.svg'
-import Burger from '../../../img/burger.svg'
+import LogoWhite from '../../../img/logo-white.svg'
+import BurgerWhite from '../../../img/burger-white.svg'
 import Cross from '../../../img/cross.svg'
 import FacebookBlack from '../../../img/facebook-black.svg'
 import TripadvisorBlack from '../../../img/tripadvisor-black.svg'
@@ -54,7 +54,7 @@ class Navigation extends Component {
         <div className="logo">
           <Link to="/">
             <img
-              src={Logo}
+              src={LogoWhite}
               alt="Logo Wild Drop"
             />
           </Link>
@@ -64,7 +64,7 @@ class Navigation extends Component {
           right
           styles={styles}
           width={'100%'}
-          customBurgerIcon={<img src={Burger} />}
+          customBurgerIcon={<img src={BurgerWhite} alt="Menu Navigation" />}
           customCrossIcon={<img src={Cross} />}
           pageWrapId={'page-wrap'}
           outerContainerId={'outer-container'}
