@@ -57,15 +57,6 @@ class TemplateWrapper extends Component {
         return <NavigationWhite />
       }
     }
-    
-    // try {
-    //   // const isHomepage = location.pathname === withPrefix("/");
-    //   const isHomepage = location.pathname
-    //   console.log(isHomepage)
-  
-    // } catch (e) {
-    //   console.log(e)
-    // }
 
     return (
       <div id="outer-container">

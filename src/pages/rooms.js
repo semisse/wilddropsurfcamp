@@ -13,19 +13,16 @@ export default IndexPage
 
 export const query = graphql`
   query RoomsQuery {
-    ourRooms: imageSharp(id: { regex: "/home/our-rooms.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    ThingsToDo: imageSharp(id: { regex: "/home/things-to-do.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    AboutMe: imageSharp(id: { regex: "/home/aboutme.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
+    allFile (filter: {relativeDirectory: {regex: "/(gallery)/"}}) {
+      edges {
+        node {
+          childImageSharp {
+            id
+            resolutions {
+              ...GatsbyImageSharpResolutions
+            }
+          } 
+        }
       }
     }
   }

@@ -12,9 +12,9 @@ class Rooms extends Component {
     return (
       <div className="container-fluid" id="page-wrap">
         <Hero className="container-fluid" />
-        <DormsDescription />
-        <RoomsDescription />
-        <HouseDescription />
+        <DormsDescription data={data} />
+        <RoomsDescription data={data} />
+        <HouseDescription data={data} />
       </div>
     )
   }
