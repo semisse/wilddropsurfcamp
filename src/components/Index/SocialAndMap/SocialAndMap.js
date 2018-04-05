@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { Row, Col } from 'react-bootstrap'
 
 import Social from './Social'
 import Map from './Map'
@@ -7,16 +8,14 @@ import Map from './Map'
 import './SocialAndMap.sass'
 
 const SocialAndMap = () => (
-  <div className="SocialAndMap container">
-    <div className="row">
-      <div className="col-sm-12 col-md-6">
+    <Row className="show-grid SocialAndMap">
+      <Col xs={12} sm={6} className="SocialWrapper">
         <Social />
-      </div>
-      <div className="col-sm-12 col-md-6">
+      </Col>
+      <Col xs={12} sm={6} className="MapWrapper">
         <Map />
-      </div>
-    </div>
-  </div>
+      </Col>
+    </Row>
 )
 
 export default SocialAndMap

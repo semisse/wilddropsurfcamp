@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
+import { Grid, Row, Col } from 'react-bootstrap'
 
 import Hero from '../Index/Hero/Hero'
 import Welcome from '../Index/Welcome/Welcome'
@@ -13,18 +14,22 @@ class OuterContainer extends Component {
   render() {
     const data = this.props.data
     return (
-      <div className="container-fluid" id="page-wrap">
-        <Hero className="container-fluid" />
+      <div id="page-wrap">
+        <Grid  fluid={true}>
+            <Hero />
+            <Welcome />
+        </Grid>
 
-        <Welcome className="container-fluid" />
+        <Grid>
+            <RoomsAndThings data={this.props.data} />
+            <About data={this.props.data} />
+            <SocialAndMap />
+            
+        </Grid>
 
-        <RoomsAndThings className="container" data={this.props.data} />
-
-        <About className="container" data={this.props.data} />
-
-        <SocialAndMap className="container" />
-
-        <Contacts className="container-fluid" />
+        <Grid  fluid={true}>
+          <Contacts />
+        </Grid>
 
       </div>
     )

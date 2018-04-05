@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Img from 'gatsby-image'
-import {Grid, Row, Col } from 'react-bootstrap';
+import {Grid, Row, Col } from 'react-bootstrap'
 
 class Galeria extends Component {
   render() {

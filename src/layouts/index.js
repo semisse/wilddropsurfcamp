@@ -11,8 +11,6 @@ import Footer from '../components/Index/Footer/Footer'
 import nprogress from 'nprogress'
 import 'nprogress/nprogress.css'
 
-import './css/bootstrap-grid.css'
-import './css/bootstrap-reboot.min.css'
 import './css/bootstrap.min.css'
 import './index.sass'
 
@@ -27,21 +25,6 @@ class TemplateWrapper extends Component {
         async: true
       },
     })
-
-    
-
-    // let RightNavigation
-    //   if (location.pathname === '/') {
-
-    //     // RightNavigation = <Navigation />
-
-    //     // return RightNavigation
-    //     return 'Hello'
-    //   } else {
-    //     RightNavigation = <NavigationWhite />
-
-    //     return RightNavigation
-    //   }
 
   }
 

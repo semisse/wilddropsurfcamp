@@ -1,29 +1,30 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import {Grid, Row, Col } from 'react-bootstrap'
 
 import './Social.sass'
 
 const Social = () => (
-  <div className="Social container">
-    <div className="row">
-      <div className="col-sm-12 facebook">
+  <div className="Social">
+    <Row className="show-grid">
+      <Col xs={12} className="facebook">
         <a href="http://facebook.com" target="_blank">
           we are on facebook
         </a>
-      </div>
-    </div>
-    <div className="row">
-      <div className="col-sm-6 tripadvisor">
+      </Col>
+    </Row>
+    <Row className="show-grid">
+      <Col xs={6} className="tripadvisor">
         <a href="http://tripadvisor.com" target="_blank">
           and on<br />tripadvisor
         </a>
-      </div>
-      <div className="col-sm-6 instagram">
+      </Col>
+      <Col xs={6} className="instagram">
         <a href="http://instagram.com" target="_blank">
           and on<br />instagram
         </a>
-      </div>
-    </div>
+      </Col>
+    </Row>
   </div>
 )
 

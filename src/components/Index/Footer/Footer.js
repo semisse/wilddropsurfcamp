@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { Row, Col } from 'react-bootstrap'
 
 import Logo from '../../../img/logo.svg'
 import Superlativo from '../../../img/superlativo.svg'
@@ -11,32 +12,31 @@ import './Footer.sass'
 
 const Footer = () => (
   <footer className="Footer container-fluid">
-    <div className="container">
-      <div className="row">
-        <div className="col-sm-12 col-md-4 logo">
-          <img src={Logo} />
-        </div>
+  <div className="container">
+    <Row>
+      <Col xs={12} md={4} className="logo">
+        <img src={Logo} />
+      </Col>
 
-        <div className="col-sm-12 col-md-4 sitemap">
-          <li>
-            <Link to="/">home</Link>
-          </li>
-          <li>
-            <Link to="/rooms">rooms</Link>
-          </li>
-          <li>
-            <Link to="/things-to-do">things to do</Link>
-          </li>
-          <li>
-            <Link to="/about">about</Link>
-          </li>
-          <li>
-            <Link to="/contacts">contacts</Link>
-          </li>
-        </div>
-
-        <div className="col-sm-12 col-md-4 social">
-          <div className="social">
+      <Col xs={12} md={4} className="sitemap">
+        <li>
+              <Link to="/">home</Link>
+            </li>
+            <li>
+              <Link to="/rooms">rooms</Link>
+            </li>
+            <li>
+              <Link to="/things-to-do">things to do</Link>
+            </li>
+            <li>
+              <Link to="/about">about</Link>
+            </li>
+            <li>
+              <Link to="/contacts">contacts</Link>
+            </li>
+      </Col>
+      <Col xs={12} md={4} className="social">
+      
             <a href="http://facebook.com">
               <span>
                 <img src={Facebook} alt="Facebook" />
@@ -52,18 +52,18 @@ const Footer = () => (
                 <img src={Instagram} alt="Instagram" />
               </span>
             </a>
-          </div>
-        </div>
-      </div>
+          
+      </Col>
 
-      <div className="row credits">
-        <div className="col-sm-12">
-          <a href="http://samuelfialho.com" target="_blank">
+    </Row>
+    <Row className="credits">
+      <Col xs={12}>
+      <a href="http://samuelfialho.com" target="_blank">
             <h4>Designed by</h4>
             <img src={Superlativo} />
           </a>
-        </div>
-      </div>
+      </Col>
+    </Row>
     </div>
   </footer>
 )
