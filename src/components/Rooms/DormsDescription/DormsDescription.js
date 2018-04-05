@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 
 import Slick from './Slick/Slick'
+import Galeria from './Galeria'
 
 import './DormsDescription.sass'
 
@@ -12,7 +13,7 @@ class DormsDescription extends Component {
     const data = this.props.data
 
     return (
-      <div>
+      <div className="RoomsDescription">
         <h2>Dorms</h2>
         <p>
           Our dorms are bright and spacious with comfortable bunks and lockers.
@@ -26,11 +27,15 @@ class DormsDescription extends Component {
 
         <p>Showers and toilets are situated nearby each dorm.</p>
 
-        <Link to="/contacts">
-          <button>Book Now!</button>
-        </Link>
-
+        <div className="callme">
+          <Link to="/contacts">
+            <span className="button">book now!</span>
+          </Link>
+        </div>
+            
         <Slick data={data} />
+
+        <Galeria data={data} />
 
       </div>
     )

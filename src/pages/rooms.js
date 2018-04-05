@@ -24,6 +24,27 @@ export const query = graphql`
           } 
         }
       }
-    }
+    },
+    allFile (filter: {relativeDirectory: {regex: "/(gallery)/"}}) {
+      edges {
+        node {
+          childImageSharp {
+            id
+            sizes {
+              base64
+            tracedSVG
+            aspectRatio
+            src
+            srcSet
+            srcWebp
+            srcSetWebp
+            sizes
+            originalImg
+            originalName
+            }
+          } 
+        }
+      }
+    },
   }
 `

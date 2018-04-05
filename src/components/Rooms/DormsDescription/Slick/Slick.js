@@ -2,6 +2,8 @@ import React from 'react'
 import Slider from 'react-slick'
 import Img from 'gatsby-image'
 
+import './Slick.sass'
+
 class Slick extends React.Component {
   render () {
     var settings = {

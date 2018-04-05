@@ -1,12 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import Rooms from '../components/Rooms/Rooms'
-
 const IndexPage = ({ data }) => (
   <div id="contacts">
     <h1>Contacts</h1>
-    <Rooms data={data} />
   </div>
 )
 
