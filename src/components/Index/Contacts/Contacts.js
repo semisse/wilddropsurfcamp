@@ -5,14 +5,17 @@ import { Row, Col } from 'react-bootstrap'
 import './Contacts.sass'
 
 const Contacts = () => (
-  <Row className="Contacts">
-    <Col lg={6} className="title">
+  
+
+   <Row className="Contacts">
+   <div className="container">
+    <Col sm={6} className= "title">
       <h2>
         This is <br />where we are
       </h2>
     </Col>
 
-    <Col xs={12} md={3} className="content">
+    <Col sm={6} className="content">
       <li>
         Rua da Liberdade, n. 88 <br />
         2450-236, Nazaré <br />
@@ -29,7 +32,11 @@ const Contacts = () => (
         </a>
       </div>
     </Col>
+    </div>
   </Row>
+  
+  
+ 
 )
 
 export default Contacts
