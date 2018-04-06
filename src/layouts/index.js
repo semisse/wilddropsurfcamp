@@ -36,9 +36,9 @@ class TemplateWrapper extends Component {
 
       if(typeof window !== 'undefined' && window.location.pathname === '/') {
         return <Navigation />
-      } else if (window.location.pathname === '/about') {
+      } else if (typeof window !== 'undefined' && window.location.pathname === '/about') {
         return <Navigation />
-      } else if (window.location.pathname === '/contacts') {
+      } else if (typeof window !== 'undefined' && window.location.pathname === '/contacts') {
         return <Navigation />
       } else {
         return <NavigationWhite />
