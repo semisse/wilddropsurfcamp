@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import About from '../components/About/About'
+
 const IndexPage = ({ data }) => (
   <div id="about">
-    <h1>About</h1>
+    <About data={data}/>
   </div>
 )
 
@@ -11,20 +13,43 @@ export default IndexPage
 
 export const query = graphql`
   query AboutQuery {
-    ourRooms: imageSharp(id: { regex: "/home/our-rooms.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    ThingsToDo: imageSharp(id: { regex: "/home/things-to-do.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    }
     AboutMe: imageSharp(id: { regex: "/home/aboutme.jpg/" }) {
       sizes(maxWidth: 1240) {
         ...GatsbyImageSharpSizes
       }
-    }
+    },
+    allFile (filter: {relativeDirectory: {regex: "/(gallery)/"}}) {
+      edges {
+        node {
+          childImageSharp {
+            id
+            resolutions {
+              ...GatsbyImageSharpResolutions
+            }
+          } 
+        }
+      }
+    },
+    allFile (filter: {relativeDirectory: {regex: "/(gallery)/"}}) {
+      edges {
+        node {
+          childImageSharp {
+            id
+            sizes {
+              base64
+            tracedSVG
+            aspectRatio
+            src
+            srcSet
+            srcWebp
+            srcSetWebp
+            sizes
+            originalImg
+            originalName
+            }
+          } 
+        }
+      }
+    },
   }
 `
