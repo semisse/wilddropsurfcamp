@@ -17,8 +17,8 @@ class Rooms extends Component {
         </Grid>
         <Grid>
           <DormsDescription data={data} />
-          {/* <RoomsDescription data={data} />
-          <HouseDescription data={data} /> */}
+          <RoomsDescription data={data} />
+          <HouseDescription data={data} />
         </Grid>
       </div>
     )

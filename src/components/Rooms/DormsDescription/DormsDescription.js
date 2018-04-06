@@ -13,7 +13,7 @@ class DormsDescription extends Component {
     const data = this.props.data
 
     return (
-      <Row className="show-grid" className="RoomsDescription">
+      <Row className="show-grid" className="DormsDescription">
         <Content />
         <Galeria data={data} />
       </Row>
