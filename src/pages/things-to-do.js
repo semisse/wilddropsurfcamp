@@ -1,30 +1,50 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import ThingsToDo from '../components/ThingsToDo/ThingsToDo'
+
 const IndexPage = ({ data }) => (
-  <div id="things-to-do">
-    <h1>Things To Do</h1>
+  <div id="ThingsToDo">
+    <ThingsToDo data={data} />
   </div>
 )
 
 export default IndexPage
 
 export const query = graphql`
-  query ThingsQuery {
-    ourRooms: imageSharp(id: { regex: "/home/our-rooms.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
+  query ThingsToDoQuery {
+    allFile (filter: {relativeDirectory: {regex: "/(gallery)/"}}) {
+      edges {
+        node {
+          childImageSharp {
+            id
+            resolutions {
+              ...GatsbyImageSharpResolutions
+            }
+          } 
+        }
       }
-    }
-    ThingsToDo: imageSharp(id: { regex: "/home/things-to-do.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
+    },
+    allFile (filter: {relativeDirectory: {regex: "/(gallery)/"}}) {
+      edges {
+        node {
+          childImageSharp {
+            id
+            sizes {
+              base64
+            tracedSVG
+            aspectRatio
+            src
+            srcSet
+            srcWebp
+            srcSetWebp
+            sizes
+            originalImg
+            originalName
+            }
+          } 
+        }
       }
-    }
-    AboutMe: imageSharp(id: { regex: "/home/aboutme.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    }
+    },
   }
 `
