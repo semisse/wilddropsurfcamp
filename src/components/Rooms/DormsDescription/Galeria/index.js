@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import Img from 'gatsby-image'
-import {Grid, Row, Col } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
+
+import './index.sass'
 
 class Galeria extends Component {
   render() {
     const Images = this.props.data.allFile.edges
     return (
-      <Grid>
+      <Col xs={12} md={6} className="Galeria">
         <Row className="show-grid">
           <Col xs={12}>
             <Img sizes={Images[0].node.childImageSharp.sizes} />
@@ -30,7 +32,7 @@ class Galeria extends Component {
             <Img sizes={Images[0].node.childImageSharp.sizes} />
           </Col>
         </Row>
-      </Grid>
+      </Col>
     )
   }
 }
