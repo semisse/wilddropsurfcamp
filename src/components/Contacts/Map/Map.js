@@ -23,7 +23,7 @@ class Map extends Component {
     return (
       <div className="Map">
         <Row className="show-grid">
-          <Col xs={12} className="google-map">
+          <Col xs={12} md={6} className="google-map">
             <GoogleMapReact
               defaultCenter={this.props.center}
               defaultZoom={this.props.zoom}

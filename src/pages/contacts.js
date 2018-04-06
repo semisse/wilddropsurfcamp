@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import Contacts from '../components/Contacts/Contacts'
+
 const IndexPage = ({ data }) => (
   <div id="contacts">
-    <h1>Contacts</h1>
+    <Contacts data={data} />
   </div>
 )
 
