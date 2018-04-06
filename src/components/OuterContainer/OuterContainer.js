@@ -7,7 +7,6 @@ import Welcome from '../Index/Welcome/Welcome'
 import RoomsAndThings from '../Index/RoomsAndThings/RoomsAndThings'
 import About from '../Index/About/About'
 import SocialAndMap from '../Index/SocialAndMap/SocialAndMap'
-import Map from '../Index/Map/Map'
 import Contacts from '../Index/Contacts/Contacts'
 
 class OuterContainer extends Component {
