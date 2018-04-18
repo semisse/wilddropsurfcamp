@@ -7,6 +7,7 @@ import './index.sass'
 class Galeria extends Component {
   render() {
     const Images = this.props.data.dorms.edges
+    
     return (
       <Col xs={12} md={6} className="Galeria">
         <Row className="show-grid">
