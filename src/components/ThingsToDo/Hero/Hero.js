@@ -11,10 +11,10 @@ class Hero extends Component {
       <Row className="show-grid" className="Hero">
         <Col xs={12}>
           <h1>
-            Things<br />you dream<br />to do
+            FIND US,<br />DISCOVER<br />YOURSELF
           </h1>
           <h2>
-            You can do them here.
+            Our goal is to make your holidays special
           </h2>
         </Col>
       </Row>

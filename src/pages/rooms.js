@@ -13,38 +13,65 @@ export default IndexPage
 
 export const query = graphql`
   query RoomsQuery {
-    allFile (filter: {relativeDirectory: {regex: "/(gallery)/"}}) {
+    dorms: allFile (filter: {id: {regex: "/rooms/dorms/"}}) {
       edges {
         node {
           childImageSharp {
-            id
-            resolutions {
-              ...GatsbyImageSharpResolutions
-            }
-          } 
-        }
-      }
-    },
-    allFile (filter: {relativeDirectory: {regex: "/(gallery)/"}}) {
-      edges {
-        node {
-          childImageSharp {
-            id
             sizes {
               base64
-            tracedSVG
-            aspectRatio
-            src
-            srcSet
-            srcWebp
-            srcSetWebp
-            sizes
-            originalImg
-            originalName
+              tracedSVG
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+              originalImg
+              originalName
             }
-          } 
+          }
         }
       }
     },
+    rooms: allFile (filter: {id: {regex: "/rooms/room/"}}) {
+      edges {
+        node {
+          childImageSharp {
+            sizes {
+              base64
+              tracedSVG
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+              originalImg
+              originalName
+            }
+          }
+        }
+      }
+    },
+    house: allFile (filter: {id: {regex: "/rooms/house/"}}) {
+      edges {
+        node {
+          childImageSharp {
+            sizes {
+              base64
+              tracedSVG
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+              originalImg
+              originalName
+            }
+          }
+        }
+      }
+    }
   }
 `

@@ -8,9 +8,9 @@ class Content extends Component {
   render() {
     return (
       <Col xs={12} md={6}>
-        <h2>House</h2>
+        <h2>The place</h2>
         <p>
-          Our dorms are bright and spacious with comfortable bunks and lockers.
+          Are you a surfer? The house was made for you
         </p>
 
         <p>

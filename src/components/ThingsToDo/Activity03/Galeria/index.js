@@ -6,7 +6,7 @@ import './index.sass'
 
 class Galeria extends Component {
   render() {
-    const Images = this.props.data.allFile.edges
+    const Images = this.props.data.rooms.edges
     return (
       <Col xs={12} md={6} mdPull={6} className="Galeria">
         <Row className="show-grid">

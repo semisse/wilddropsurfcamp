@@ -8,7 +8,7 @@ const Social = () => (
   <div className="Social">
     <Row className="show-grid">
       <Col xs={12} className="facebook">
-        <a href="http://facebook.com" target="_blank">
+        <a href="https://www.facebook.com/wilddropsurfcamp/" target="_blank">
           we are on facebook
         </a>
       </Col>
@@ -20,7 +20,7 @@ const Social = () => (
         </a>
       </Col>
       <Col xs={6} className="instagram">
-        <a href="http://instagram.com" target="_blank">
+        <a href="https://www.instagram.com/wilddrop.surfcamp/" target="_blank">
           and on<br />instagram
         </a>
       </Col>

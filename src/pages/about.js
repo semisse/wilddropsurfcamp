@@ -18,38 +18,25 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     },
-    allFile (filter: {relativeDirectory: {regex: "/(gallery)/"}}) {
+    house: allFile (filter: {id: {regex: "/rooms/house/"}}) {
       edges {
         node {
           childImageSharp {
-            id
-            resolutions {
-              ...GatsbyImageSharpResolutions
-            }
-          } 
-        }
-      }
-    },
-    allFile (filter: {relativeDirectory: {regex: "/(gallery)/"}}) {
-      edges {
-        node {
-          childImageSharp {
-            id
             sizes {
               base64
-            tracedSVG
-            aspectRatio
-            src
-            srcSet
-            srcWebp
-            srcSetWebp
-            sizes
-            originalImg
-            originalName
+              tracedSVG
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+              originalImg
+              originalName
             }
-          } 
+          }
         }
       }
-    },
+    }
   }
 `

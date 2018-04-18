@@ -14,13 +14,12 @@ class Content extends Component {
             <Img sizes={data.AboutMe.sizes} />
         </Col>
         <Col xs={12} md={5} className="content">
-            <h1>Hey dude!</h1>
-            <p>Lorem ipsum dolor amet venmo tilde kickstarter kinfolk forage iPhone vegan. Organic deep v biodiesel tacos. </p>
-            <p>Taiyaki hoodie tumblr, poke pok pok meggings brunch taxidermy fam hammock leggings cold-pressed. </p>
-            <p>Hell of schlitz drinking vinegar lyft chia crucifix roof party edison bulb banh mi affogato yr humblebrag bushwick offal. Man bun put a bird on it sartorial bitters. Meditation enamel pin asymmetrical godard before they sold out.</p>
-            <p>Lorem ipsum dolor amet venmo tilde kickstarter kinfolk forage iPhone vegan. Organic deep v biodiesel tacos. </p>
-            <p>Taiyaki hoodie tumblr, poke pok pok meggings brunch taxidermy fam hammock leggings cold-pressed. </p>
-            <p>Hell of schlitz drinking vinegar lyft chia crucifix roof party edison bulb banh mi affogato yr humblebrag bushwick offal. Man bun put a bird on it sartorial bitters. Meditation enamel pin asymmetrical godard before they sold out.</p>
+            <h1>Nice to meet you!</h1>
+            <p>My name's Edgar, some people call me Drop. </p>
+            <p>I live here since ever and I am loving it. Like you, I love to travel and I have my needs, so feel comfortable to tell me if you need anything and I'll try to do my best for you.</p>
+            <p>I also love to surf, skate, horse ride, surf, my friends, food, wine & beer, surf, barbecue, animals, watch the sunset, surf and so many other things you can also find here.</p>
+            <p>Did I say that I love to surf already? The music is another side of my world, so please tell me if you love to make music as well!</p>
+            <p>I am waiting for you to share what I have. Boas Ondas!</p>
         </Col>
       </Row>
     )

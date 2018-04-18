@@ -19,7 +19,7 @@ export default class About extends Component {
             Nice to <br /> meet you!
           </h2>
           <p>
-            My name is Edgar and amet wolf asymmetrical blog 3 wolf moon. Cliche tacos wolf squid. Asymmetrical photo booth coloring book selfies taiyaki whatever tofu etsy vexillologist next level tousled green juice. 
+          Hello, my name's Edgar and I will do my best to make you feel comfortable here. You have a wide range of activities and places to explore. I can advise and help you! Come alone or with a group and we can plan all the activities like surf lessons, yoga sessions or taste Portuguese gastronomy. Check out for more...
           </p>
         </Col>
       </Row>

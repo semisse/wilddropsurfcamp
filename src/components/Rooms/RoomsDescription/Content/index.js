@@ -8,9 +8,9 @@ class Content extends Component {
   render() {
     return (
       <Col xs={12} md={6} mdPush={6}>
-        <h2>Rooms</h2>
+        <h2>The double room</h2>
         <p>
-          Our dorms are bright and spacious with comfortable bunks and lockers.
+          The couples always want it
         </p>
 
         <p>

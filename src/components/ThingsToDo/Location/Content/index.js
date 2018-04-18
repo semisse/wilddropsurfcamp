@@ -8,18 +8,10 @@ class Content extends Component {
   render() {
     return (
       <Col xs={12} md={6}>
-        <h2>Location</h2>
+        <h2>Paredes da Vitória / Nazaré</h2>
         <p>
-          Our dorms are bright and spacious with comfortable bunks and lockers.
+          Run away from the crowded places and come to meet us. We live in a secret paradise with sun, nature, culture, gastronomy, good people and, guess what, here you can still find uncrowded waves, for all levels: beginners, experts, big riders... What's your style?
         </p>
-
-        <p>
-          Guests have access cards to their dorm and the access is overseen by
-          our staff. We offer mixed dorms as well as dorms for women only
-          depending on availability.{' '}
-        </p>
-
-        <p>Showers and toilets are situated nearby each dorm.</p>
 
         <div className="callme">
           <Link to="/contacts">

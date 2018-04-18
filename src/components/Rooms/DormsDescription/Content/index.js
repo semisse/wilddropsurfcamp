@@ -8,15 +8,15 @@ class Content extends Component {
   render() {
     return (
       <Col xs={12} md={6}>
-        <h2>Dorms</h2>
+        <h2>The dorms</h2>
         <p>
-          Our dorms are bright and spacious with comfortable bunks and lockers.
+          Share your holiday with your friends 
         </p>
 
         <p>
           Guests have access cards to their dorm and the access is overseen by
           our staff. We offer mixed dorms as well as dorms for women only
-          depending on availability.{' '}
+          depending on availability.
         </p>
 
         <p>Showers and toilets are situated nearby each dorm.</p>

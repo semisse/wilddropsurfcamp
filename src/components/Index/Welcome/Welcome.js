@@ -5,7 +5,6 @@ import { Grid, Row, Col } from 'react-bootstrap'
 import './Welcome.sass'
 
 const Welcome = () => (
-  
     <Row className="Welcome">
       <Col xs={12}>
         <h2>Hello Friend!</h2>
@@ -13,16 +12,10 @@ const Welcome = () => (
 
       <Col xs={12} md={8} mdOffset={2} lg={4} lgOffset={4}>
         <p>
-          Lorem ipsum dolor amet wolf asymmetrical blog 3 wolf moon. Cliche
-          tacos wolf squid. Asymmetrical photo booth coloring book selfies
-          taiyaki whatever tofu etsy vexillologist next level tousled green
-          juice.{' '}
+          Welcome to Portugal's best kept secret and be amazed with our nature. Here you can explore, surf, taste the world's best gastronomy and wine, feel the power of the biggest waves in the world and so many other amazing things. Discover us, discover yourself!
         </p>
       </Col>
     </Row>
-
- 
- 
 )
 
 export default Welcome
