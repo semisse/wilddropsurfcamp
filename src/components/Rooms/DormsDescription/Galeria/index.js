@@ -30,7 +30,7 @@ class Galeria extends Component {
             <Img sizes={Images[4].node.childImageSharp.sizes} />
           </Col>
           <Col xs={6}>
-            <Img sizes={Images[5].node.childImageSharp.sizes} />
+            <Img sizes={Images[4].node.childImageSharp.sizes} />
           </Col>
         </Row>
       </Col>
