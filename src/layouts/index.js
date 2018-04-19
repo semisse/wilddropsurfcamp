@@ -49,20 +49,18 @@ class TemplateWrapper extends Component {
 
     return (
       <div id="outer-container">
-        <Helmet
-          title="Wild Drop"
-          meta={[
-            { name: 'description', content: 'WILD DROP SURFCAMP - NAZARÉ / PAREDES DA VITÓRIA - HOSTEL ACCOMMODATION SURFCAMP' },
-            { name: 'keywords', content: 'wild, drop, surf, camp, hostel, nazaré, praia, norte, paredes, vitoria, waves, portugal, hotel, accommodation, horse, yoga, uncrowded, oeste, alugar, quarto' },
-            { name: 'og:title', content: 'Wild Drop Surfcamp' },
-            { name: 'og:url', content: 'http://www.wildropsurfcamp.com' },
-            { name: 'og:description', content: 'NAZARÉ / PAREDES DA VITÓRIA - HOSTEL ACCOMMODATION SURFCAMP' },
-            { name: 'og:image', content: '../img/ogimage.jpg' },
-            { name: 'msapplication-TileColor', content: '#EC645A' },
-            { name: 'theme-color', content: '#EC645A' },
-            { name: 'msapplication-TileImage', content: '../img/meta/ms-icon-144x144.png' },
-          ]}
-        />
+        <Helmet>
+          <title>Wild Drop Surfcamp</title>
+          <meta charSet="utf-8" />
+          <meta name="description" content="WILD DROP SURFCAMP - NAZARÉ / PAREDES DA VITÓRIA - HOSTEL ACCOMMODATION SURFCAMP" />
+          <meta name="keywords" content="wild, drop, surf, camp, hostel, nazaré, praia, norte, paredes, vitoria, waves, portugal, hotel, accommodation, horse, yoga, uncrowded, oeste, alugar, quarto" />
+          <meta name="og:title" content="Wild Drop Surfcamp" />
+          <meta name="og:description" content="WILD DROP SURFCAMP - NAZARÉ / PAREDES DA VITÓRIA - HOSTEL ACCOMMODATION SURFCAMP" />
+          <meta name="og:image" content="../img/ogimage.jpg" />
+          <meta name="msapplication-TileColor" content="#EC645A" />
+          <meta name="theme-color" content="#EC645A" />
+          <link rel="canonical" href="http://www.wilddropsurfcamp.com" />
+        </Helmet>
         <Nav />
         { this.props.children({...this.props}) }
         <Footer className="container-fluid" />

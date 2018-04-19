@@ -15,7 +15,6 @@ module.exports = {
           android: true,
           appleIcon: true,
           appleStartup: true,
-          coast: false,
           favicons: true,
           firefox: true,
           twitter: false,
