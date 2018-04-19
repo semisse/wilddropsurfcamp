@@ -30,8 +30,6 @@ class TemplateWrapper extends Component {
 
   }
 
-  
-
   render() {
 
     function Nav() {
@@ -56,7 +54,7 @@ class TemplateWrapper extends Component {
           <meta name="keywords" content="wild, drop, surf, camp, hostel, nazaré, praia, norte, paredes, vitoria, waves, portugal, hotel, accommodation, horse, yoga, uncrowded, oeste, alugar, quarto" />
           <meta name="og:title" content="Wild Drop Surfcamp" />
           <meta name="og:description" content="WILD DROP SURFCAMP - NAZARÉ / PAREDES DA VITÓRIA - HOSTEL ACCOMMODATION SURFCAMP" />
-          <meta name="og:image" content="../img/ogimage.jpg" />
+          <meta name="og:image" content="https://wilddrop.netlify.com/static/hero.dbfca6a5.jpg" />
           <meta name="msapplication-TileColor" content="#EC645A" />
           <meta name="theme-color" content="#EC645A" />
           <link rel="canonical" href="http://www.wilddropsurfcamp.com" />
