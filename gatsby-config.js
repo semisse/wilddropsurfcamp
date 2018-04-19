@@ -1,11 +1,15 @@
 module.exports = {
   siteMetadata: {
     title: 'Wild Drop',
+    siteUrl: `https://wilddrop.netlify.com/`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-plugin-sitemap`
+    },
     {
       resolve: `gatsby-plugin-favicon`,
       options: {

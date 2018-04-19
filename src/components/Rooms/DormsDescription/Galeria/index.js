@@ -8,30 +8,34 @@ import Dorm01 from '../../../../img/rooms/dorms/dorm01.jpg'
 
 class Galeria extends Component {
   render() {
-    const Images = this.props.data.dorms.edges
+    const dorms01 = this.props.data.dorms01.sizes
+    const dorms02 = this.props.data.dorms02.sizes
+    const dorms03 = this.props.data.dorms03.sizes
+    const dorms04 = this.props.data.dorms04.sizes
+    const dorms05 = this.props.data.dorms05.sizes
     return (
       <Col xs={12} md={6} className="Galeria">
         <Row className="show-grid">
           <Col xs={12}>
-            <Img sizes={Images[1].node.childImageSharp.sizes} />
+            <Img sizes={dorms01} />
           </Col>
         </Row>
 
         <Row className="show-grid">
           <Col xs={6}>
-            <Img sizes={Images[2].node.childImageSharp.sizes} />
+            <Img sizes={dorms02} />
           </Col>
           <Col xs={6}>
-            <Img sizes={Images[3].node.childImageSharp.sizes} />
+            <Img sizes={dorms03} />
           </Col>
         </Row>
 
         <Row className="show-grid">
           <Col xs={6}>
-            <Img sizes={Images[4].node.childImageSharp.sizes} />
+            <Img sizes={dorms04} />
           </Col>
           <Col xs={6}>
-            <Img sizes={Images[4].node.childImageSharp.sizes} />
+            <Img sizes={dorms05} />
           </Col>
         </Row>
       </Col>
