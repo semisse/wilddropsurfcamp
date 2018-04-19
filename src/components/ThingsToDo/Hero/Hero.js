@@ -5,10 +5,16 @@ import { Row, Col } from 'react-bootstrap'
 
 import './Hero.sass'
 
+import HeroImage from '../../../img/things-to-do/hero.jpg'
+
+var heroStyle = {
+  backgroundImage: `url(${HeroImage})`
+};
+
 class Hero extends Component {
   render() {
     return (
-      <Row className="show-grid" className="Hero">
+      <Row className="show-grid" className="Hero" style={heroStyle}>
         <Col xs={12}>
           <h1>
             FIND US,<br />DISCOVER<br />YOURSELF

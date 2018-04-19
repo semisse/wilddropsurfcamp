@@ -14,8 +14,8 @@ class OuterContainer extends Component {
     const data = this.props.data
     return (
       <div id="page-wrap">
-        <Grid  fluid={true}>
-            <Hero />
+        <Grid fluid={true}>
+            <Hero data={this.props.data} />
             <Welcome />
         </Grid>
 

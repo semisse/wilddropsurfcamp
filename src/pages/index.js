@@ -29,5 +29,10 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
+    HeroIndex: imageSharp(id: { regex: "/home/hero/hero.jpg/" }) {
+      sizes(maxWidth: 1440) {
+        ...GatsbyImageSharpSizes
+      }
+    }
   }
 `
