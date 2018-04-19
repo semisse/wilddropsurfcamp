@@ -16,6 +16,8 @@ import './index.sass'
 
 import OuterContainer from '../components/OuterContainer/OuterContainer'
 
+import OGImage from '../img/ogimage.jpg'
+
 class TemplateWrapper extends Component {
 
   componentDidMount = () => {
@@ -50,8 +52,12 @@ class TemplateWrapper extends Component {
         <Helmet
           title="Wild Drop"
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'WILD DROP SURFCAMP - NAZARÉ / PAREDES DA VITÓRIA - HOSTEL ACCOMMODATION SURFCAMP' },
+            { name: 'keywords', content: 'wild, drop, surf, camp, hostel, nazaré, praia, norte, paredes, vitoria, waves, portugal, hotel, accommodation, horse, yoga, uncrowded, oeste, alugar, quarto' },
+            { name: 'og:title', content: 'Wild Drop Surfcamp' },
+            { name: 'og:url', content: 'http://www.wildropsurfcamp.com' },
+            { name: 'og:description', content: 'NAZARÉ / PAREDES DA VITÓRIA - HOSTEL ACCOMMODATION SURFCAMP' },
+            { name: 'og:image', content: {OGImage} },
           ]}
         />
         <Nav />
