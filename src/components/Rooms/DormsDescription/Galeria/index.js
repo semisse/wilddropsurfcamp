@@ -4,8 +4,6 @@ import { Row, Col } from 'react-bootstrap'
 
 import './index.sass'
 
-import Dorm01 from '../../../../img/rooms/dorms/dorm01.jpg'
-
 class Galeria extends Component {
   render() {
     const dorms01 = this.props.data.dorms01.sizes

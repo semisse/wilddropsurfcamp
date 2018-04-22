@@ -24,7 +24,7 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
-    AboutMe: imageSharp(id: { regex: "/home/aboutme.jpg/" }) {
+    AboutMe: imageSharp(id: { regex: "/about/edgar.jpg/" }) {
       sizes(maxWidth: 1240) {
         ...GatsbyImageSharpSizes
       }

@@ -19,7 +19,7 @@ class RoomsAndThings extends Component {
         </Col>
 
         <Col xs={12} md={6} className="Things">
-          <Link to="/rooms">
+          <Link to="/things-to-do">
               <Img sizes={this.props.data.ThingsToDo.sizes} />
               <h2>
                 Things <br />to do

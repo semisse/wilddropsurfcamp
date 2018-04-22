@@ -13,30 +13,35 @@ export default IndexPage
 
 export const query = graphql`
   query AboutQuery {
-    AboutMe: imageSharp(id: { regex: "/home/aboutme.jpg/" }) {
+    AboutMe: imageSharp(id: { regex: "/about/edgar.jpg/" }) {
       sizes(maxWidth: 1240) {
         ...GatsbyImageSharpSizes
       }
     },
-    house: allFile (filter: {id: {regex: "/rooms/house/"}}) {
-      edges {
-        node {
-          childImageSharp {
-            sizes {
-              base64
-              tracedSVG
-              aspectRatio
-              src
-              srcSet
-              srcWebp
-              srcSetWebp
-              sizes
-              originalImg
-              originalName
-            }
-          }
-        }
+    about01: imageSharp(id: { regex: "/about/gallery/about01.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
       }
-    }
+    },
+    about02: imageSharp(id: { regex: "/about/gallery/about02.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    about03: imageSharp(id: { regex: "/about/gallery/about03.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    about04: imageSharp(id: { regex: "/about/gallery/about04.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    about05: imageSharp(id: { regex: "/about/gallery/about05.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    },
   }
 `
