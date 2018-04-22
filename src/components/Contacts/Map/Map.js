@@ -25,6 +25,7 @@ class Map extends Component {
         <Row className="show-grid">
           <Col xs={12} md={6} className="google-map">
             <GoogleMapReact
+              bootstrapURLKeys={{ key: 'AIzaSyD-oOqbFnTcIXA9Ubl-9idp6XBY8-wu3R4' }}
               defaultCenter={this.props.center}
               defaultZoom={this.props.zoom}
             >
