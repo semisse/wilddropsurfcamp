@@ -13,6 +13,36 @@ export default IndexPage
 
 export const query = graphql`
   query ThingsToDoQuery {
+    paredes01: imageSharp(id: { regex: "/things-to-do/paredes/paredes01.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    paredes02: imageSharp(id: { regex: "/things-to-do/paredes/paredes02.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    paredes03: imageSharp(id: { regex: "/things-to-do/paredes/paredes03.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    paredes04: imageSharp(id: { regex: "/things-to-do/paredes/paredes04.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    paredes05: imageSharp(id: { regex: "/things-to-do/paredes/paredes05.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    surf01: imageSharp(id: { regex: "/things-to-do/surf/surf01.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    },
     dorms: allFile (filter: {id: {regex: "/rooms/dorms/"}}) {
       edges {
         node {

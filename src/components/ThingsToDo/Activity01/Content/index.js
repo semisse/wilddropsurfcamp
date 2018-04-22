@@ -6,18 +6,14 @@ class Content extends Component {
   render() {
     return (
       <Col xs={12} md={6} mdPush={6}>
-        <h2>Activity 01</h2>
+        <h2>Surf</h2>
         <p>
-          Our dorms are bright and spacious with comfortable bunks and lockers.
+          Along the coast you will find a big diversity of waves. Different
+          levels and sizes for beginners, experts and big riders. The north
+          canyon is just right there! We also have an agreement with the local
+          surfschools. We can also just provide you equipment and advise you to
+          the best spots.
         </p>
-
-        <p>
-          Guests have access cards to their dorm and the access is overseen by
-          our staff. We offer mixed dorms as well as dorms for women only
-          depending on availability.{' '}
-        </p>
-
-        <p>Showers and toilets are situated nearby each dorm.</p>
       </Col>
     )
   }

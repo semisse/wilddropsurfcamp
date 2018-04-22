@@ -17,7 +17,7 @@ const AnyReactComponent = ({ text }) => (
 class Map extends Component {
   static defaultProps = {
     center: { lat: 39.701036, lng: -9.048253 },
-    zoom: 14,
+    zoom: 14
   }
   render() {
     return (
@@ -25,6 +25,7 @@ class Map extends Component {
         <Row className="show-grid">
           <Col xs={12} className="google-map">
             <GoogleMapReact
+              bootstrapURLKeys={{ key: 'AIzaSyD-oOqbFnTcIXA9Ubl-9idp6XBY8-wu3R4' }}
               defaultCenter={this.props.center}
               defaultZoom={this.props.zoom}
             >

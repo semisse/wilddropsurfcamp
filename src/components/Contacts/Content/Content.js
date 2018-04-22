@@ -19,8 +19,8 @@ class Content extends Component {
 
           <div className="content">
             <li>
-              Rua Vale Galego, 11 <br />
-              2450-236, Nazaré <br />
+              Rua Vale Galego, 11<br />
+              2445, Paredes da Vitória, Pataias<br />
               Portugal
             </li>
             <li>39°42′N 9°2'53.71''W</li>
