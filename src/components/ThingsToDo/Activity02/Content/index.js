@@ -6,24 +6,12 @@ class Content extends Component {
   render() {
     return (
       <Col xs={12} md={6}>
-        <h2>Activity 02</h2>
+        <h2>Wind sports</h2>
         <p>
-          Our dorms are bright and spacious with comfortable bunks and lockers.
+          Kitesurfing and Paragliding are popular. For kitesurfing you can find
+          spots with or without waves. To the paragliding, there are specific
+          landing points
         </p>
-
-        <p>
-          Guests have access cards to their dorm and the access is overseen by
-          our staff. We offer mixed dorms as well as dorms for women only
-          depending on availability.{' '}
-        </p>
-
-        <p>Showers and toilets are situated nearby each dorm.</p>
-
-        <div className="callme">
-          <Link to="/contacts">
-            <span className="button">book now!</span>
-          </Link>
-        </div>
       </Col>
     )
   }

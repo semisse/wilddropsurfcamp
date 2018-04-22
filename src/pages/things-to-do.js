@@ -43,6 +43,26 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     },
+    windsports01: imageSharp(id: { regex: "/things-to-do/windsports/windsports01.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    skate01: imageSharp(id: { regex: "/about/gallery/about02.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    horseriding01: imageSharp(id: { regex: "/things-to-do/horseriding/horseriding01.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    yoga01: imageSharp(id: { regex: "/about/gallery/about05.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    },
     dorms: allFile (filter: {id: {regex: "/rooms/dorms/"}}) {
       edges {
         node {

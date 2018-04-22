@@ -6,30 +6,12 @@ import './index.sass'
 
 class Galeria extends Component {
   render() {
-    const Images = this.props.data.rooms.edges
+    const horseriding01 = this.props.data.horseriding01.sizes
     return (
       <Col xs={12} md={6} className="Galeria">
         <Row className="show-grid">
           <Col xs={12}>
-            <Img sizes={Images[0].node.childImageSharp.sizes} />
-          </Col>
-        </Row>
-
-        <Row className="show-grid">
-          <Col xs={6}>
-            <Img sizes={Images[0].node.childImageSharp.sizes} />
-          </Col>
-          <Col xs={6}>
-            <Img sizes={Images[0].node.childImageSharp.sizes} />
-          </Col>
-        </Row>
-
-        <Row className="show-grid">
-          <Col xs={6}>
-            <Img sizes={Images[0].node.childImageSharp.sizes} />
-          </Col>
-          <Col xs={6}>
-            <Img sizes={Images[0].node.childImageSharp.sizes} />
+            <Img sizes={horseriding01} />
           </Col>
         </Row>
       </Col>

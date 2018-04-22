@@ -6,24 +6,12 @@ class Content extends Component {
   render() {
     return (
       <Col xs={12} md={6}>
-        <h2>Activity 04</h2>
+        <h2>Horse riding</h2>
         <p>
-          Our dorms are bright and spacious with comfortable bunks and lockers.
+          If you're a horse lover, we can provide you certified horse riding
+          lessons on well educated dressage horses. You can also enjoy a
+          pleasurent tour by the beach.
         </p>
-
-        <p>
-          Guests have access cards to their dorm and the access is overseen by
-          our staff. We offer mixed dorms as well as dorms for women only
-          depending on availability.{' '}
-        </p>
-
-        <p>Showers and toilets are situated nearby each dorm.</p>
-
-        <div className="callme">
-          <Link to="/contacts">
-            <span className="button">book now!</span>
-          </Link>
-        </div>
       </Col>
     )
   }
