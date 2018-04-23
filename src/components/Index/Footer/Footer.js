@@ -37,17 +37,17 @@ const Footer = () => (
       </Col>
       <Col xs={12} md={4} className="social">
       
-            <a href="http://facebook.com">
+            <a href="https://www.facebook.com/wilddropsurfcamp/" target="_blank">
               <span>
                 <img src={Facebook} alt="Facebook" />
               </span>
             </a>
-            <a href="http://tripadvisor.com">
+            <a href="http://tripadvisor.com" target="_blank">
               <span>
                 <img src={Tripadvisor} alt="TripAdvisor" />
               </span>
             </a>
-            <a href="http://instagram.com">
+            <a href="https://www.instagram.com/wilddrop.surfcamp/" target="_blank">
               <span>
                 <img src={Instagram} alt="Instagram" />
               </span>
