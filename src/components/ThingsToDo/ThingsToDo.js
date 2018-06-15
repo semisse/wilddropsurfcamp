@@ -21,9 +21,9 @@ class ThingsToDo extends Component {
         <Grid>
           <Location data={data} />
           <Activity01 data={data} />
-          <Activity02 data={data} />
           <Activity03 data={data} />
           <Activity04 data={data} />
+          <Activity02 data={data} />
           <Activity05 data={data} />
         </Grid>
       </div>

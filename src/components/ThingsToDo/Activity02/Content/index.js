@@ -5,7 +5,7 @@ import { Row, Col } from 'react-bootstrap'
 class Content extends Component {
   render() {
     return (
-      <Col xs={12} md={6}>
+      <Col xs={12} md={6} mdPush={6}>
         <h2>Wind sports</h2>
         <p>
           Kitesurfing and Paragliding are popular. For kitesurfing you can find

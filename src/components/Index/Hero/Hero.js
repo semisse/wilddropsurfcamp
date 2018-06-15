@@ -18,14 +18,11 @@ var heroStyle = {
 class Hero extends Component {
   render() {
     return (
-      <Row className="show-grid" className="Hero" style={heroStyle}>
+      <Row className="show-grid" className="Hero" >
         <Col xs={12}>
           <h1>
             Go wild <br /> and drop it
           </h1>
-          <h2>
-            The Portuguese paradise <br />is waiting for you
-          </h2>
         </Col>
       </Row>
     )

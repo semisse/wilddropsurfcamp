@@ -5,7 +5,7 @@ import { Row, Col } from 'react-bootstrap'
 class Content extends Component {
   render() {
     return (
-      <Col xs={12} md={6} mdPush={6}>
+      <Col xs={12} md={6}>
         <h2>Surf</h2>
         <p>
           Along the coast you will find a big diversity of waves. Different

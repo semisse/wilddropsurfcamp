@@ -14,8 +14,8 @@ class Location extends Component {
 
     return (
       <Row className="show-grid" className="Location">
-        <Content />
         <Galeria data={data} />
+        <Content />
       </Row>
     )
   }

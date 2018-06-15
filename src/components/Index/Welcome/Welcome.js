@@ -7,7 +7,7 @@ import './Welcome.sass'
 const Welcome = () => (
     <Row className="Welcome">
       <Col xs={12}>
-        <h2>Hello Friend!</h2>
+        <h2>The Portuguese paradise <br/> is waiting for you</h2>
       </Col>
 
       <Col xs={12} md={8} mdOffset={2} lg={4} lgOffset={4}>

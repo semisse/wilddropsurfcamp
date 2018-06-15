@@ -137,8 +137,8 @@ class Navigation extends Component {
           </div>
           <div className="callme">
             <h3>Call me now!</h3>
-            <a href="tel:+351917998536">
-              <span className="button">+351 917 998 536</span>
+            <a href="tel:+351918217275">
+              <span className="button">+351 918 217 275</span>
             </a>
           </div>
         </Menu>

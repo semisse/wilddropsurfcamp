@@ -8,7 +8,7 @@ class Galeria extends Component {
   render() {
     const windsports01 = this.props.data.windsports01.sizes
     return (
-      <Col xs={12} md={6} className="Galeria">
+      <Col xs={12} md={6} mdPull={6} className="Galeria">
         <Row className="show-grid">
           <Col xs={12}>
             <Img sizes={windsports01} />
