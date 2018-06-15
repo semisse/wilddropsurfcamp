@@ -8,9 +8,7 @@ class Content extends Component {
       <Col xs={12} md={6}>
         <h2>Horse riding</h2>
         <p>
-          If you're a horse lover, we can provide you certified horse riding
-          lessons on well educated dressage horses. You can also enjoy a
-          pleasurent tour by the beach.
+        If you're a horse lover, we can provide you certified horse riding lessons on well educated dressage horses. You can also enjoy a pleasurable tour by the beach.
         </p>
       </Col>
     )

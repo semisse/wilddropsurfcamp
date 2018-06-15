@@ -20,7 +20,7 @@ class Hero extends Component {
             FIND US,<br />DISCOVER<br />YOURSELF
           </h1>
           <h2>
-            Our goal is to make your holidays special
+            Our goal is to make your holiday special
           </h2>
         </Col>
       </Row>
