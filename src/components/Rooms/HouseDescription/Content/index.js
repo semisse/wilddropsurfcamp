@@ -10,16 +10,12 @@ class Content extends Component {
       <Col xs={12} md={6}>
         <h2>The place</h2>
         <p>
-          Are you a surfer? The house was made for you
+          Are you a surfer? The house was made for you.
         </p>
 
         <p>
-          Guests have access cards to their dorm and the access is overseen by
-          our staff. We offer mixed dorms as well as dorms for women only
-          depending on availability.{' '}
+          We have a rack to keep your surfboards, a place to clean your wetsuits and a nice garden where you can relax after your surf session!
         </p>
-
-        <p>Showers and toilets are situated nearby each dorm.</p>
 
         <div className="callme">
           <Link to="/contacts">

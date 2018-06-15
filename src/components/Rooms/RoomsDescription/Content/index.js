@@ -10,16 +10,14 @@ class Content extends Component {
       <Col xs={12} md={6} mdPush={6}>
         <h2>The double room</h2>
         <p>
-          The couples always want it
+          The couples always want it. 
         </p>
 
         <p>
-          Guests have access cards to their dorm and the access is overseen by
-          our staff. We offer mixed dorms as well as dorms for women only
-          depending on availability.{' '}
+          Guests have key access to their room and free access to the kitchen, lounge room and garden. 
         </p>
 
-        <p>Showers and toilets are situated nearby each dorm.</p>
+        <p>Showers and toilets are situated nearby each dorm. The house is overseen by our staff.</p>
 
         <div className="callme">
           <Link to="/contacts">
