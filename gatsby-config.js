@@ -41,6 +41,7 @@ module.exports = {
       options: {
         fonts: [
           `lato\:400`,
+          `Permanent+Marker\:400`,
         ]
       }
     },
